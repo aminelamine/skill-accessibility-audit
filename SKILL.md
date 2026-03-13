@@ -261,6 +261,13 @@ Markdown structuré prêt à être intégré dans une page web dédiée `/access
 
 ## Rappels transversaux
 
+**Référentiel d'audit unique : RGAA 4.1.2**
+La skill utilise exclusivement le RGAA 4.1.2 comme référentiel d'audit.
+- Tous les critères cités dans les outputs sont des critères RGAA (ex : critère 11.1, 3.2…)
+- Ne jamais mixer avec des critères WCAG (ex : SC 1.3.1) ou des règles WAI-ARIA dans un même output
+- WCAG 2.1 est la base internationale du RGAA — le mentionner uniquement comme contexte, jamais comme référentiel d'audit
+- WAI-ARIA est un guide d'implémentation — l'utiliser dans `design-patterns.md` pour guider le code, jamais dans les grilles d'audit
+
 **Scope RGAA 4.1.2**
 - 106 critères de contrôle, 13 thématiques, ~2,5 tests par critère
 - Basé sur WCAG 2.1 niveaux A et AA
