@@ -2,6 +2,15 @@
 
 Référence pour le mode Review et Guide de la skill accessibility-audit.
 
+> ⚠️ **Périmètre de ce fichier**
+>
+> WAI-ARIA 1.1 est une **spécification d'implémentation**, pas un référentiel d'audit.
+> Ce fichier guide la façon d'écrire du code accessible — il ne remplace pas les critères RGAA 4.1.2.
+>
+> **Dans tous les outputs d'audit :** ne jamais citer de critères WAI-ARIA ou WCAG directement.
+> Toujours référencer les critères RGAA 4.1.2 correspondants (ex : critère 7.1, 11.1…).
+> WCAG et WAI-ARIA sont des sources sous-jacentes du RGAA — pas des référentiels parallèles.
+
 ---
 
 ## 1. Principes fondamentaux WAI-ARIA
