@@ -117,6 +117,30 @@ Le rapport doit contenir :
 
 ## 4. Déclaration d'accessibilité
 
+### ⚠️ Prérequis — Ce qu'une déclaration n'est PAS
+
+Une déclaration d'accessibilité **ne peut pas être rédigée** à partir de :
+- L'audit d'une page unique
+- L'audit d'un composant isolé (bouton, formulaire, modale…)
+- Un taux de conformité estimé sans audit formalisé
+- Une évaluation automatique seule (WAVE, Lighthouse, axe…)
+
+Elle est le **document de synthèse final** d'un audit complet, mené sur un échantillon
+représentatif de pages selon la méthodologie RGAA. Publier une déclaration sans cette base
+expose l'organisme à un risque juridique et constitue une fausse information pour les utilisateurs.
+
+**Prérequis obligatoires avant rédaction :**
+
+| Élément | Requis ? |
+|---|---|
+| Audit réalisé sur un échantillon de pages (min. 5) | ✅ |
+| Liste des URL auditées | ✅ |
+| Taux de conformité calculé selon la formule RGAA (`C / (C + NC) × 100`) | ✅ |
+| Liste des critères NC avec description et pages concernées | ✅ |
+| Date et auteur/organisme de l'audit | ✅ |
+| AT et navigateurs utilisés pour les tests | ✅ |
+| Dérogations éventuelles justifiées | Si applicable |
+
 ### Obligations légales
 Obligatoire pour :
 - Les organismes publics (État, collectivités, EPA…)
