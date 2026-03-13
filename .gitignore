@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# PDF source (ne pas versionner le PDF RGAA officiel)
+*.pdf
+
+# Temporaire
+*.tmp
+*.bak
