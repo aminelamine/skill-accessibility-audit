@@ -211,15 +211,45 @@ Critère | Thématique | Description | Statut | Observations | Priorité
 
 ## MODE : DÉCLARATION
 
-### Processus
+> ⚠️ **Prérequis légal — à vérifier AVANT toute production**
+>
+> Une déclaration d'accessibilité est un **document légal** qui engage juridiquement l'organisme.
+> Elle ne peut pas être rédigée à partir d'un audit de page unique, d'un composant isolé,
+> ou d'un taux estimé sans base d'audit formelle.
+>
+> **Elle repose obligatoirement sur un audit complet** couvrant un échantillon représentatif
+> de pages (minimum 5, idéalement 15), réalisé selon la méthodologie RGAA.
+
+### Étape 0 — Validation des prérequis (obligatoire)
+
+Avant toute production, vérifier que l'utilisateur dispose de :
+
+| Prérequis | Requis ? |
+|---|---|
+| Audit réalisé sur un échantillon de pages (min. 5) | ✅ Obligatoire |
+| Liste des URL auditées | ✅ Obligatoire |
+| Taux de conformité calculé selon la formule RGAA | ✅ Obligatoire |
+| Liste des critères NC avec description | ✅ Obligatoire |
+| Date et auteur de l'audit | ✅ Obligatoire |
+| Dérogations éventuelles (charge disproportionnée, contenu tiers) | Si applicable |
+
+**Si un ou plusieurs prérequis manquent :**
+→ Ne pas générer la déclaration.
+→ Expliquer clairement ce qui manque et pourquoi c'est bloquant.
+→ Orienter vers le mode **Audit** pour constituer la base nécessaire.
+→ Exemple de message : *"Une déclaration d'accessibilité ne peut pas être rédigée à partir d'un audit de composant isolé. Elle requiert un audit complet sur un échantillon de pages représentatives du site. Souhaitez-vous que je vous guide sur la méthodologie d'audit RGAA d'abord ?"*
+
+### Processus (si prérequis validés)
 
 1. **Lire** `references/audit-methodology.md` — section Déclaration d'accessibilité
-2. **Collecter** les informations nécessaires : nom du site, date d'audit, taux de conformité, non-conformités, dérogations
+2. **Collecter** les informations nécessaires : nom du site, URL auditées, date d'audit, auditeur, taux de conformité, liste des NC, dérogations
 3. **Produire** la déclaration structurée selon les obligations légales françaises
 
 ### Mentions obligatoires
 - État de conformité (totalement / partiellement / non conforme)
 - Résultats de l'audit (taux, liste des non-conformités)
+- Pages ayant fait l'objet de la vérification (URLs)
+- Technologies et AT utilisées pour les tests
 - Contenus non accessibles et raisons (NC, dérogation charge disproportionnée, contenu tiers)
 - Moyens de contact pour signaler un problème
 - Voie de recours (Défenseur des droits)
