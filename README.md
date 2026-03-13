@@ -20,15 +20,33 @@ Charger les fichiers `references/*.md` selon le mode utilisé.
 
 ## 🎯 Ce que fait cette skill
 
-5 modes opérationnels, adaptés à différents profils (designer, développeur, PM, débutant) :
+5 modes opérationnels couvrant l'ensemble du cycle de conception et de validation :
 
-| Mode | Déclencheur | Output |
-|------|-------------|--------|
-| **Audit** | "Audite cette page / ce composant" | Grille RGAA complète, taux de conformité C/NC/NA |
-| **Review** | "Vérifie l'accessibilité de ce code" | Problèmes priorisés 🔴🟠🟡 + corrections |
-| **Guide** | "Explique le critère X / comment implémenter Y" | Explication adaptée au profil + exemples |
-| **Checklist** | "Checklist accessibilité pour [formulaire / modale…]" | Markdown (Notion) + tabulaire (Sheets) |
-| **Déclaration** | "Aide-moi à rédiger ma déclaration d'accessibilité" | Document structuré + mentions légales |
+| Mode | Quand l'utiliser | Pour qui | Output |
+|------|-----------------|----------|--------|
+| ☑️ **Checklist** | **Avant** — en phase de conception | Designer, PO | Liste de critères RGAA à respecter pour un composant donné |
+| 🔍 **Review** | **Pendant** — en cours de développement | Développeur, designer | Problèmes priorisés 🔴🟠🟡 sur un composant précis + corrections |
+| 📋 **Audit** | **Après** — en validation avant mise en prod | PM, lead, auditeur | Grille RGAA complète sur un ensemble de pages, taux de conformité |
+| 📖 **Guide** | À tout moment — question sur un critère ou une technique | Tous profils | Explication adaptée au profil + exemples de code correct/incorrect |
+| 📄 **Déclaration** | En fin d'audit complet — document légal | PM, responsable qualité | Document structuré selon les obligations légales françaises |
+
+> **Checklist ≠ Review ≠ Audit** — ce ne sont pas trois façons de faire la même chose.  
+> La Checklist cadre la conception *en amont*, la Review corrige un composant *en cours de dev*,  
+> l'Audit évalue la conformité globale *avant la mise en prod*.
+
+---
+
+## 💬 Types d'inputs acceptés
+
+**Pas besoin de code pour utiliser cette skill.** Elle accepte plusieurs formats :
+
+| Input | Exemple | Modes compatibles |
+|-------|---------|------------------|
+| **Code HTML** | Coller le code source d'un composant | Review, Audit |
+| **Description en langage naturel** | "J'ai une modale avec un bouton fermer sans label" | Review, Checklist, Guide |
+| **Screenshot** | Uploader une capture d'écran d'une interface | Review, Audit |
+| **URL publique** | "Audite l'accessibilité de cette page : https://..." | Audit |
+| **Nom d'un composant** | "Checklist pour un menu de navigation" | Checklist, Guide |
 
 ---
 
@@ -84,34 +102,34 @@ La skill est construite sur les sources officielles :
 
 ## 📋 Exemples d'utilisation
 
-### Mode Audit
+### Mode Checklist — avant de concevoir
 ```
-Audite ce composant de formulaire pour sa conformité RGAA 4.1.2 :
-[coller le code HTML]
+Génère une checklist RGAA pour un composant "menu de navigation"
+en sortie Markdown et tabulaire (Sheets).
 ```
 
-### Mode Review
+### Mode Review — pendant le dev
 ```
-Vérifie l'accessibilité de cette modale pour un profil développeur.
+Vérifie l'accessibilité de cette modale.
 Donne-moi les non-conformités par ordre de sévérité avec les corrections.
-[coller le code]
+[coller le code ou décrire le composant]
 ```
 
-### Mode Guide
+### Mode Audit — en validation
+```
+Audite l'accessibilité de cette page : https://exemple.fr/contact
+```
+
+### Mode Guide — à tout moment
 ```
 Explique le critère 11.1 du RGAA à un designer qui ne connaît pas le code.
 ```
 
-### Mode Checklist
-```
-Génère une checklist RGAA pour un composant "tableau de données"
-en sortie Markdown et tabulaire (Sheets).
-```
-
-### Mode Déclaration
+### Mode Déclaration — après un audit complet
 ```
 Aide-moi à rédiger la déclaration d'accessibilité de notre site.
-Taux de conformité : 73%. Organisme : Acme Corp.
+Audit réalisé sur 8 pages. Taux de conformité : 73%. Organisme : Acme Corp.
+[fournir la liste des critères NC et les URLs auditées]
 ```
 
 ---
