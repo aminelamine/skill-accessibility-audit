@@ -68,13 +68,17 @@ skill-accessibility-audit/
 
 ## 📚 Base de connaissance
 
-La skill est construite sur les sources officielles :
+La skill utilise **exclusivement le RGAA 4.1.2** comme référentiel d'audit.
+WCAG et WAI-ARIA sont des sources sous-jacentes — jamais des référentiels parallèles.
 
-- **RGAA 4.1.2** — Référentiel général d'amélioration de l'accessibilité  
-  [accessibilite.numerique.gouv.fr](https://accessibilite.numerique.gouv.fr/methode/)
-- **WCAG 2.1** niveaux A et AA (50 critères de succès)
-- **WAI-ARIA 1.1** — Patterns de composants (APG)
-- **EN 301-549 V2.1.2** — Norme européenne de référence
+| Source | Rôle dans la skill |
+|--------|-------------------|
+| **RGAA 4.1.2** (DINUM) | Seul référentiel d'audit — tous les critères, statuts C/NC/NA, taux de conformité |
+| **WCAG 2.1** (W3C) | Base internationale du RGAA — mentionné en contexte uniquement, jamais dans les outputs |
+| **WAI-ARIA 1.1** (W3C) | Guide d'implémentation technique — utilisé pour guider le code, jamais dans les grilles d'audit |
+| **EN 301-549 V2.1.2** | Norme européenne de référence — contexte réglementaire uniquement |
+
+Source officielle RGAA : [accessibilite.numerique.gouv.fr](https://accessibilite.numerique.gouv.fr/methode/)
 
 ### Périmètre
 - ✅ Interfaces web HTML (HTML5, CSS3, JavaScript)
